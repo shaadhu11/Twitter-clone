@@ -12,6 +12,7 @@ import ListAltIcon from "@mui/icons-material/ListAlt";
 import PermIdentityIcon from "@mui/icons-material/PermIdentity";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 import Grid from "@mui/material/Grid";
+import HomeSection from "../HomeSection/HomeSection";
 
 
 function HomePage() {
@@ -28,7 +29,7 @@ function HomePage() {
         className=" px-5 lg:px-9 hidden lg:block w-full relative"
       >
 
-         middle
+        <HomeSection/>
         
       </Grid>
 
