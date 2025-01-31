@@ -63,7 +63,7 @@ const Navigations = () => {
         <div className="py-5">
             <Button
               sx={{
-                width: "100%",
+                width: "80%",
                 borderRadius: "29px",
                 py: "15px",
                 bgcolor: "#1e88e5",
@@ -84,7 +84,7 @@ const Navigations = () => {
           />
           <div>
             <span>mhd</span>
-            <span className='opacity-70'>@mhd</span>
+            <span className='opacity-70 !important'>@mhd</span>
           </div>
           <Button
             id="basic-button"
