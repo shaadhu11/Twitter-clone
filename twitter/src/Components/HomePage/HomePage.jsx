@@ -13,6 +13,7 @@ import PermIdentityIcon from "@mui/icons-material/PermIdentity";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 import Grid from "@mui/material/Grid";
 import HomeSection from "../HomeSection/HomeSection";
+import RightPart from "../RightPart/RightPart";
 
 
 function HomePage() {
@@ -34,7 +35,7 @@ function HomePage() {
       </Grid>
 
       <Grid item xs={0} lg={3} className="hidden lg:block w-full relative">
-        right 
+        <RightPart/>
       </Grid>
     </Grid>
   )
