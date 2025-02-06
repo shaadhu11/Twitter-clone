@@ -1,6 +1,7 @@
 
 import React from "react";
 import "./Homepage.css";
+import Profile from "../Profile/Profile";
 import Navigations from "../Navigation/Navigations";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import HomeIcon from "@mui/icons-material/Home";
@@ -14,6 +15,8 @@ import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 import Grid from "@mui/material/Grid";
 import HomeSection from "../HomeSection/HomeSection";
 import RightPart from "../RightPart/RightPart";
+import { Route, Routes } from "react-router-dom";
+import TweetDetials from "../TweetDetials/TweetDetials";
 
 
 function HomePage() {
@@ -29,8 +32,15 @@ function HomePage() {
         lg={6}
         className=" px-5 lg:px-9 hidden lg:block w-full relative"
       >
+        <Routes>
+          <Route path="/" element={<HomeSection/>}></Route>
+          <Route path="/home" element={<HomeSection/>}></Route>
+          <Route path="/account/:id" element={<Profile/>}></Route>
+          <Route path="/twit/:id" element={<TweetDetials/>}></Route>
 
-        <HomeSection/>
+        </Routes>
+
+        
         
       </Grid>
 

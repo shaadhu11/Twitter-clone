@@ -50,8 +50,8 @@ const Navigations = () => {
             <div
               className="cursor-pointer flex space-x-3 item-center "
               onClick={() =>
-                item.title === "Profile"
-                  ? navigate(`/profile/${5}`)
+                item.title === "Account"
+                  ? navigate(`/account/${5}`)
                   : navigate(item.path)
               }
             >
