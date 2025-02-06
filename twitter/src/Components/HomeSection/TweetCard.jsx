@@ -87,7 +87,7 @@ const TweetCard = () => {
             </div>
           </div>
           <div className="mt-2">
-            <div className="cursor-pointer">
+            <div onClick={()=>navigate(`/twit/${3}`)} className="cursor-pointer">
               <p className="mb-2 p-0">
                 hello am good
                 </p>
