@@ -9,16 +9,18 @@ import TabContext from '@mui/lab/TabContext';
 import TabList from '@mui/lab/TabList';
 import TabPanel from '@mui/lab/TabPanel';
 import TweetCard from "../HomeSection/TweetCard";
+import ProfileModel from "./ProfileModel";
 
 
 const Profile = () => {
   const [tabValue,setTabValue]=useState("1");
   const navigate = useNavigate();
+ 
+  const [openProfileModel,setOpenProfileModel]=useState(false);
+  const handleOpenProfileModel= ()=> setOpenProfileModel(true);
+  const handleClose =()=> setOpenProfileModel(false);
   const handleBack = () => navigate(-1);
-  const handleOpenProfileModel = () => {
-    
-    console.log("open Profile model");
-  };
+
   const handleFollowUser = () => {  
     console.log("follow");
   };
@@ -145,7 +147,10 @@ const Profile = () => {
       </TabContext>
     </Box>
 
-      </section>   
+      </section> 
+      <section>
+        <ProfileModel handleClose={handleClose} open={openProfileModel}/>
+      </section>  
     </div>  
   )
 }
