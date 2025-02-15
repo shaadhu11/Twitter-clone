@@ -11,18 +11,19 @@ import ImageIcon from "@mui/icons-material/Image";
 import FmdGoodIcon from "@mui/icons-material/FmdGood";
 import TagFacesIcon from "@mui/icons-material/TagFaces";
 
-const style = {
-    position: 'absolute',
-    top: '50%',
-    left: '50%',
-    transform: 'translate(-50%, -50%)',
-    width: 400,
-    bgcolor: 'background.paper',
-    border: 'none',
+
+  const style = {
+    position: "absolute",
+    top: "50%",
+    left: "50%",
+    transform: "translate(-50%, -50%)",
+    width: 600,
+    bgcolor: "background.paper",
+    border: "none",
     boxShadow: 24,
     p: 4,
-    outline:'none',
-    borderRadius:4,
+    outline: "none",
+    borderRadius: 4,
   };
 
 export default function ReplyModel({open,handleClose}) {

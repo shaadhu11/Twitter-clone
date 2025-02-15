@@ -1,9 +1,17 @@
-import React from 'react'
+import React,{useState} from 'react'
 import SearchIcon from "@mui/icons-material/Search";
 import Brightness4Icon from "@mui/icons-material/Brightness4";
 import { Button } from "@mui/material";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
+import SubscriptionModel from '../SubscriptionModel/SubscriptionModel';
 const RightPart = () => {
+    const [openSubscriptionModel,setOpenSubscriptionModel]=useState(false);
+    const handleOpenSubscriptionModel= ()=> setOpenSubscriptionModel(true);
+    const handleClose =()=> setOpenSubscriptionModel(false);
+  
+
+
+
   const handleChangeTheme = () => {
     // Toggle between light and dark themes
     
@@ -30,6 +38,8 @@ const RightPart = () => {
         <Button
           variant="contained"
           sx={{ padding: "10px", paddingX: "20px", borderRadius: "25px" }}
+          onClick={handleOpenSubscriptionModel}
+
           
         >
           Get Verified
@@ -51,6 +61,9 @@ const RightPart = () => {
 
           <MoreHorizIcon />
         </div> ) }
+      </section>
+      <section>
+        <SubscriptionModel handleClose={handleClose} open={openSubscriptionModel}/>
       </section>
     </div>  
 
